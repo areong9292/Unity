@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PrintScore : MonoBehaviour {
+public class PrintScore : MonoBehaviour
+{
 
     public GameManager gameManager;
 
     Text scoreLabel;
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         // text 내용 컴포넌트 받아옴
         scoreLabel = GetComponent<Text>();
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         // 매프레임마다 갱신
         ChangeText();
     }
